@@ -1,0 +1,127 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.day {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.day h2 {
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+.taskInput {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.addTaskBtn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.taskList li.completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+button.removeBtn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* New Inputs & Dropdown */
+input[type="time"], select.prioritySelect {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.prioritySelect {
+    font-size: 14px;
+}
+
+/* Clear All Button */
+button.clearDayBtn {
+    background-color: #e67e22;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.clearDayBtn:hover {
+    background-color: #d35400;
+}
+
+/* Task Colors Based on Priority */
+li.low-priority {
+    background-color: #d3f8e2;  /* Light green */
+}
+
+li.medium-priority {
+    background-color: #fff3cd;  /* Light yellow */
+}
+
+li.high-priority {
+    background-color: #f8d7da;  /* Light red */
+}
