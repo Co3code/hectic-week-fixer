@@ -129,3 +129,10 @@ li.medium-priority {
 li.high-priority {
     background-color: #f8d7da;  /* Light red */
 }
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
